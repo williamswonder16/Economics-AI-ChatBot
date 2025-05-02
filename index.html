@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Economics AI Chatbot</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+    .chat-box {
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+    .user-msg {
+      text-align: right;
+    }
+    .bot-msg {
+      text-align: left;
+    }
+  </style>
+</head>
+<body class="p-4">
+  <h1 class="text-3xl font-bold mb-4 text-center">📘 Economics AI Chatbot</h1>
+
+  <div id="chat" class="chat-box border p-4 rounded bg-white text-black mb-4 h-96 overflow-y-scroll"></div>
+
+  <form id="chat-form" class="flex gap-2">
+    <input id="user-input" class="flex-grow p-2 rounded border text-black" type="text" placeholder="Ask an economics question..." required />
+    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
